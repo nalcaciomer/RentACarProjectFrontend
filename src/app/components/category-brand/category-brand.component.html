@@ -1,0 +1,20 @@
+<div class="card">
+  <div class="card-header border-0 text-center">
+    <h5 class="card-title">Brands</h5>
+  </div>
+
+  <div class="card-body table-responsive p-0 table-height">
+    <table class="table table-light table-hover align-middle text-center">
+      <tbody>
+        <tr
+          *ngFor="let brand of brands"
+          routerLink="/cars/brand/{{ brand.name }}"
+        >
+          <td>
+            {{ brand.name }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
