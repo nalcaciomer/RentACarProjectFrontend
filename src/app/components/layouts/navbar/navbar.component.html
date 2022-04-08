@@ -1,0 +1,68 @@
+<nav
+  class="navbar navbar-expand-md navbar-dark bg-primary"
+  aria-label="Fourth navbar example"
+>
+  <div class="container">
+    <a class="navbar-brand" routerLink="home">Rent A Car</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarsExample04"
+      aria-controls="navbarsExample04"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample04">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="cars">Cars List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="rental">Rent</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="dropdown04"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            >Promotional Cars</a
+          >
+          <ul class="dropdown-menu" aria-labelledby="dropdown04">
+            <li>
+              <a class="dropdown-item" routerLink="cars/brand/BMW 320i"
+                >BMW 320i</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="cars/brand/Volkswagen Passat"
+                >Volkswagen Passat</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="cars/brand/Honda Civic"
+                >Honda Civic</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <form>
+        <input
+          class="form-control"
+          type="text"
+          placeholder="Search"
+          aria-label="Search"
+        />
+      </form>
+    </div>
+  </div>
+</nav>

@@ -23,4 +23,20 @@ export class CarService {
       `${this.apiUrl}/getdetails`
     );
   }
+
+  getCarsDetailsByBrand(
+    brandName: string
+  ): Observable<ListResponseModel<CarDetail>> {
+    return this.httpClient.get<ListResponseModel<CarDetail>>(
+      `${this.apiUrl}/getdetailsbybrandName?name=${brandName}`
+    );
+  }
+
+  getCarsDetailsByColor(
+    colorName: string
+  ): Observable<ListResponseModel<CarDetail>> {
+    return this.httpClient.get<ListResponseModel<CarDetail>>(
+      `${this.apiUrl}/getdetailsbycolorname?name=${colorName}`
+    );
+  }
 }

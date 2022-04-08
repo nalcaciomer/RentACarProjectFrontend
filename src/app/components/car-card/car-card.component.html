@@ -1,0 +1,25 @@
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col" *ngFor="let car of cars; let i = index">
+    <div class="card h-100">
+      <img
+        *ngIf="images"
+        src="{{ imageApiUrl }}{{ getImageUrl(car.id) }}"
+        class="card-img-top"
+        alt="{{ car.brandName }}"
+      />
+      <div class="card-body">
+        <h5 class="card-title text-center">{{ car.brandName }}</h5>
+        <p class="card-text">
+          Model: {{ car.modelYear }} <br />
+          Color: {{ car.colorName }} <br />
+          Description: {{ car.description }}
+        </p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted"
+          >Daily Price: {{ car.dailyPrice | currency }}</small
+        >
+      </div>
+    </div>
+  </div>
+</div>

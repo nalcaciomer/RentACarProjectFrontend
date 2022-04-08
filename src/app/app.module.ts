@@ -14,6 +14,15 @@ import { RentalListComponent } from './components/rental-list/rental-list.compon
 import { AdminDashboardComponent } from './components/pages/admin-dashboard/admin-dashboard.component';
 import { CarDetailListComponent } from './components/car-detail-list/car-detail-list.component';
 import { RentalDetailListComponent } from './components/rental-detail-list/rental-detail-list.component';
+import { HomepageComponent } from './components/pages/homepage/homepage.component';
+import { NavbarComponent } from './components/layouts/navbar/navbar.component';
+import { FooterComponent } from './components/layouts/footer/footer.component';
+import { CarsPageComponent } from './components/pages/cars-page/cars-page.component';
+import { RentPageComponent } from './components/pages/rent-page/rent-page.component';
+import { CarCardComponent } from './components/car-card/car-card.component';
+import { CategoryBrandComponent } from './components/category-brand/category-brand.component';
+import { CategoryColorComponent } from './components/category-color/category-color.component';
+import { FilterColorPipe } from './pipes/filter-color.pipe';
 
 @NgModule({
   declarations: [
@@ -26,6 +35,15 @@ import { RentalDetailListComponent } from './components/rental-detail-list/renta
     AdminDashboardComponent,
     CarDetailListComponent,
     RentalDetailListComponent,
+    HomepageComponent,
+    NavbarComponent,
+    FooterComponent,
+    CarsPageComponent,
+    RentPageComponent,
+    CarCardComponent,
+    CategoryBrandComponent,
+    CategoryColorComponent,
+    FilterColorPipe,
   ],
   imports: [
     BrowserModule,
